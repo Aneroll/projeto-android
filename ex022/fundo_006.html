@@ -4,16 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body{
             height: 100vh; /*tamanho da tela ocupada*/
             background-color: black;
             background-image: url('Imagens/wallpaper002.jpg');
             background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed; /*O fundo rola junto com o conteudo*/
             background-size: cover; /*Cobre a tela inteiro mesmo qeu a imagem fro recortada*/
             /* background-size: 100% 100%; altura e largura*/
             /*background-size:contain; imagem 100% exibida*/
+            /*
+
+            Shorthand = background
+            color > image > position > repeat > [size] > attachment
+
+             background: black url('Imagens/wallpaper002.jpg') center center no-repeat  fixed;
+            background-size: cover;
+
+            */
+            
+           
 
         }
         main{
@@ -22,7 +35,7 @@
             border-radius: 15px;
             margin: auto;
             padding: 10px;
-            width: 400px;
+            max-width: 400px;
              
         }
     </style>
